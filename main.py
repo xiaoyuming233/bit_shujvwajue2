@@ -1,4 +1,9 @@
 import csv
+from copy import deepcopy
+
+
+def get2(a):
+    return a[1]
 
 
 def readData():
@@ -31,6 +36,7 @@ confidenceMin = 0.5
 # 定义最低支持度和置信度
 infoSet, countSet = readData()
 # countSet里面统计了每个元素出现的所有集合
+
 
 # 寻找频繁1项集
 goodSet = []
