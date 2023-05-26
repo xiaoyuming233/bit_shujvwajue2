@@ -37,6 +37,13 @@ confidenceMin = 0.5
 infoSet, countSet = readData()
 # countSet里面统计了每个元素出现的所有集合
 
+sati = []
+for i in range(1000):
+    if len(countSet[i]) > 0:
+        newSet = [i, len(countSet[i])]
+        sati.append(newSet)
+sati.sort(key=get2, reverse=True)
+print(sati)
 
 # 寻找频繁1项集
 goodSet = []
